@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Regikart Library — Compliance, Tax, and Startup Guides</title>
+  <meta name="description" content="Guides, compliance updates, tax calculators, and startup resources written by Chartered Accountants and Corporate Lawyers.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Specific blog page styles */
+    .blog-search-card {
+      background: var(--panel);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+      margin-bottom: 30px;
+    }
+    .search-input-group {
+      display: flex;
+      gap: 10px;
+    }
+    .search-input-group input {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(15,23,36,0.08);
+      font-size: 1rem;
+    }
+    .blog-categories {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .category-btn {
+      padding: 6px 14px;
+      background: rgba(15,23,36,0.03);
+      border: 1px solid transparent;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      color: var(--muted);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .category-btn.active, .category-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .blog-card {
+      background: var(--panel);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .blog-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(16,24,40,0.08);
+    }
+    .blog-meta {
+      padding: 18px 18px 0;
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .blog-body-text {
+      padding: 0 18px 18px;
+      flex: 1;
+    }
+    .blog-body-text h3 {
+      margin: 8px 0;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+    .blog-body-text p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 8px 0 0;
+      line-height: 1.5;
+    }
+    .blog-read-more {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .blog-read-more:hover {
+      text-decoration: underline;
+    }
+    .blogs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 960px) {
+      .blogs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .blogs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+          <path d="M9 16L14 21L23 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4F46E5" />
+              <stop offset="1" stop-color="#3B82F6" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-regi">Regi</span><span class="logo-kart">kart</span>
+      </a>
+      <nav class="nav">
+        <!-- Theme toggle removed -->
+        <a href="#library">Guides</a>
+        <a href="#benefits">Why Read Us</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="dropdown-btn" aria-haspopup="true" aria-expanded="false" title="More Services">
+            ⋮
+          </button>
+          <div class="dropdown-menu" id="dropdown-menu">
+            <a href="registration.html">Incorporations</a>
+            <a href="accounting.html">Bookkeeping & Payroll</a>
+            <a href="tax.html">Direct Tax Planning</a>
+            <a href="certificates.html">Licences & Certificates</a>
+            <a href="legal.html">Legal Counsel</a>
+            <a href="blogs.html">Resources</a>
+          </div>
+        </div>
+        <a href="signin.html" class="signin-link">Sign In</a>
+        <a href="#contact" class="btn small outline">Get Free Advisory</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Regikart Compliance Library</h1>
+          <p class="lead">Get jargon-free tax guides, company incorporation checklists, and compliance alerts directly written by our CAs and Corporate Lawyers to help founders navigate growth.</p>
+          
+          <ul class="feature-list">
+            <li>Updated for FY 2026-27 (Assessment Year 2027-28)</li>
+            <li>Step-by-step checklists for company operations</li>
+            <li>Free downloadable calculation templates</li>
+            <li>Regular notifications on tax filing extensions</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn primary" href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20subscribe%20to%20compliance%20alerts.">Subscribe on WhatsApp</a>
+            <a class="btn outline" href="#library">Read articles</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="journey-card" style="padding: 24px;">
+            <h4 style="margin-bottom:16px;">Ask a Compliance Question</h4>
+            <form class="whatsapp-form" data-service="Library Question" style="display:flex; flex-direction:column; gap:12px;">
+              <input type="text" name="q-name" placeholder="Your Name" required style="padding: 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg);">
+              <input type="tel" name="q-phone" placeholder="WhatsApp Number" required style="padding: 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg);">
+              <input type="text" name="q-question" placeholder="Ask your tax/legal question" required style="padding: 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg);">
+              <button class="btn primary" type="submit" style="padding: 12px;">Ask CA / CS</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Benefits -->
+    <section id="benefits" class="container trust-section">
+      <div class="section-header">
+        <h2>Why founders trust the Regikart Library</h2>
+        <p class="section-sub">We break down complex, multi-page government acts into simple action items.</p>
+      </div>
+      <div class="trust-grid-custom">
+        <div class="trust-card">
+          <div class="trust-icon-container">✍️</div>
+          <h3>Written by CAs & CSs</h3>
+          <p>No AI-written fluff. Every guide is compiled, reviewed, and updated by active Chartered Accountants and Company Secretaries.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-container">📖</div>
+          <h3>Zero Legalese Jargon</h3>
+          <p>We write for founders and business owners. Key topics are structured in plain English with clear call-outs.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-container">⏱️</div>
+          <h3>Updated and Verified</h3>
+          <p>Tax deadlines change constantly. We verify and edit our resources weekly to ensure deadlines reflect official notifications.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-container">🔒</div>
+          <h3>Actionable Checklist</h3>
+          <p>Get ready-to-use lists, timelines, and downloadable tables to satisfy board auditors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Library / Blogs List -->
+    <section id="library" class="container">
+      <div class="blog-search-card">
+        <div class="search-input-group">
+          <input type="text" id="blog-search-input" placeholder="Search guides, calculators, and legal topics (e.g. GST, Pvt Ltd, TDS)...">
+        </div>
+        <div class="blog-categories">
+          <button class="category-btn active" data-category="all">All Topics</button>
+          <button class="category-btn" data-category="incorporation">Incorporation</button>
+          <button class="category-btn" data-category="tax">Taxation & GST</button>
+          <button class="category-btn" data-category="compliance">Corporate Compliance</button>
+          <button class="category-btn" data-category="legal">Legal & IP</button>
+        </div>
+      </div>
+
+      <div class="blogs-grid" id="blogs-container">
+        <!-- Blog 1 -->
+        <article class="blog-card" data-cat="incorporation">
+          <div class="blog-meta">Incorporation</div>
+          <div class="blog-body-text">
+            <h3>Private Limited vs LLP: Which is better for VC funding?</h3>
+            <p>A detailed breakdown of shares, transferability, equity compensation (ESOPs), and investor preferences for startup founders.</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%20Pvt%20Ltd%20vs%20LLP." class="blog-read-more" target="_blank">Discuss with CS →</a>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card" data-cat="tax">
+          <div class="blog-meta">Taxation & GST</div>
+          <div class="blog-body-text">
+            <h3>GST Filing Checklist for E-commerce Sellers</h3>
+            <p>Learn how to manage multi-state GSTR-1 & GSTR-3B filings, reconcile TCS from Amazon/Flipkart, and claim Input Tax Credits (ITC).</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%20GST%20for%20E-commerce." class="blog-read-more" target="_blank">Discuss with CA →</a>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="blog-card" data-cat="tax">
+          <div class="blog-meta">Taxation & GST</div>
+          <div class="blog-body-text">
+            <h3>Presumptive Taxation (Sec 44ADA) for Freelancers</h3>
+            <p>Declare 50% of your gross professional receipts as income and pay zero tax on expenses. See if your profession qualifies.</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%2044ADA%20for%20Freelancers." class="blog-read-more" target="_blank">Discuss with CA →</a>
+          </div>
+        </article>
+
+        <!-- Blog 4 -->
+        <article class="blog-card" data-cat="legal">
+          <div class="blog-meta">Legal & IP</div>
+          <div class="blog-body-text">
+            <h3>How to Register a Trademark: Step-by-Step Guide</h3>
+            <p>From choosing a distinctive brand name to filing trademark applications and handling TM status updates like "Objected".</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%20Trademark%20Registration." class="blog-read-more" target="_blank">Discuss with Lawyer →</a>
+          </div>
+        </article>
+
+        <!-- Blog 5 -->
+        <article class="blog-card" data-cat="compliance">
+          <div class="blog-meta">Corporate Compliance</div>
+          <div class="blog-body-text">
+            <h3>Annual ROC Filings Checklist for Pvt Ltd Companies</h3>
+            <p>Don't get fined by the MCA. Review the deadlines and forms (AOC-4, MGT-7) required within 180 days of incorporation.</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%20Annual%20ROC%20Filings." class="blog-read-more" target="_blank">Discuss with CS →</a>
+          </div>
+        </article>
+
+        <!-- Blog 6 -->
+        <article class="blog-card" data-cat="tax">
+          <div class="blog-meta">Taxation & GST</div>
+          <div class="blog-body-text">
+            <h3>TDS Rates and Deadlines for FY 2026-27</h3>
+            <p>A reference table for withholding taxes on salaries (192), contractor payments (194C), professional fees (194J), and rent (194I).</p>
+            <a href="https://wa.me/917044494804?text=Hi%20Regikart%2C%20I%27d%20like%20to%20read%20the%20article%20on%20TDS%20Rates." class="blog-read-more" target="_blank">Discuss with CA →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact">
+      <div class="section-header">
+        <h2>Subscribe to Compliance Alerts</h2>
+        <p class="section-sub">Get monthly updates on tax deadlines, ROC regulations, and legal changes directly in your inbox or WhatsApp.</p>
+      </div>
+      <form class="whatsapp-form" id="signup-form" data-service="Newsletter Subscription">
+        <input type="text" name="q-name" placeholder="Full name" required>
+        <input type="tel" name="q-phone" placeholder="WhatsApp or phone number" required>
+        <input type="email" name="q-email" placeholder="Email Address (optional)">
+        <select name="q-alerts-preference" required>
+          <option value="">Choose Alert Frequency</option>
+          <option value="Monthly digest">Monthly Digest (low frequency)</option>
+          <option value="Instant alerts">Instant Deadline Alerts</option>
+        </select>
+        <button class="btn primary" type="submit">Subscribe Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="dark-footer">
+    <div class="container">
+      <div class="dark-footer-grid">
+        <div class="dark-footer-brand">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad-foot)" />
+              <path d="M9 16L14 21L23 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="logo-grad-foot" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4F46E5" />
+                  <stop offset="1" stop-color="#3B82F6" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <strong style="color:white; font-size:1.3rem; font-family:var(--font-title); font-weight:800;">Regikart</strong>
+          </div>
+          <p>Premium corporate registration, automated accounting, and tax compliance suite. Powered by modern technology platforms, audited by certified specialists.</p>
+          <div class="social-icons-footer">
+            <a href="#" class="social-icon-btn">in</a>
+            <a href="#" class="social-icon-btn">tw</a>
+            <a href="#" class="social-icon-btn">fb</a>
+          </div>
+        </div>
+        <div>
+          <h4>Incorporations</h4>
+          <ul class="dark-footer-links">
+            <li><a href="registration.html">Private Limited</a></li>
+            <li><a href="registration.html">LLP Registration</a></li>
+            <li><a href="registration.html">One Person Company</a></li>
+            <li><a href="registration.html">GSTIN Registries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tax & Audit</h4>
+          <ul class="dark-footer-links">
+            <li><a href="tax.html">GST Returns (GSTR-1/3B)</a></li>
+            <li><a href="tax.html">ITR E-Filing</a></li>
+            <li><a href="accounting.html">Annual ROC Filings</a></li>
+            <li><a href="accounting.html">Bookkeeping Plans</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Inquiries</h4>
+          <ul class="dark-footer-links" style="color:#94a3b8; list-style:none; padding:0; margin:0;">
+            <li style="margin-bottom:10px; font-size:0.85rem;">📍 Salt Lake Sector V, Kolkata, WB, 700091</li>
+            <li style="margin-bottom:10px; font-size:0.85rem;">📞 +91-70444-94804</li>
+            <li style="margin-bottom:10px; font-size:0.85rem;">✉️ hello@regikart.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dark-footer-bottom">
+        <span>© 2026 Regikart Private Limited. All rights reserved.</span>
+        <div class="dark-footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Blog filtering logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('blog-search-input');
+      const categoryBtns = document.querySelectorAll('.category-btn');
+      const blogCards = document.querySelectorAll('.blog-card');
+
+      function filterBlogs() {
+        const query = searchInput.value.toLowerCase().trim();
+        const activeCategory = document.querySelector('.category-btn.active').getAttribute('data-category');
+
+        blogCards.forEach(card => {
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const text = card.querySelector('p').textContent.toLowerCase();
+          const cat = card.getAttribute('data-cat');
+
+          const matchesSearch = title.includes(query) || text.includes(query);
+          const matchesCategory = activeCategory === 'all' || cat === activeCategory;
+
+          if (matchesSearch && matchesCategory) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterBlogs);
+      }
+
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          categoryBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          filterBlogs();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

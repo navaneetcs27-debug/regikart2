@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40">
+  <g transform="translate(8,4)">
+    <circle cx="16" cy="16" r="16" fill="#D97706" />
+    <text x="16" y="21" font-family="Segoe UI, Roboto, Arial" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="700">R</text>
+  </g>
+  <text x="52" y="25" font-family="Segoe UI, Roboto, Arial" font-size="16" fill="#0f1724">Regikart</text>
+</svg>
